@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    style="@style/Theme.Design.Light.NoActionBar"
-    tools:context=".Fragments.HomeFragment">
+    tools:context=".Fragments.SearchFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -20,23 +20,17 @@
                 android:background="@color/white"
                 android:layout_marginLeft="150dp"
                 android:src="@drawable/ic_instagram"/>
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="45dp"
-                android:background="@color/white"
-                android:layout_marginLeft="360dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/ic_insta_share"/>
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleview_home"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
+        android:text="Search"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30dp"
         />
-
 
 </FrameLayout>

@@ -7,12 +7,21 @@
         android:title="" />
 
     <item
-        android:id="@+id/fragDashboard"
-        android:icon="@drawable/ic_dashboard"
+        android:id="@+id/fragSearch"
+        android:icon="@drawable/ic_search"
         android:title="" />
 
     <item
-        android:id="@+id/fragnotification"
-        android:icon="@drawable/ic_notifications"
+        android:id="@+id/fragreels"
+        android:icon="@drawable/ic_reels"
+        android:title="" />
+
+    <item
+        android:id="@+id/fragheart"
+        android:icon="@drawable/ic_heart"
+        android:title="" />
+    <item
+        android:id="@+id/fragprofile"
+        android:icon="@drawable/ic_profile"
         android:title="" />
 </menu>

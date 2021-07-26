@@ -3,16 +3,16 @@ package com.kgstrivers.InstaC
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.kgstrivers.InstaC.Fragments.DashboardFragment
-import com.kgstrivers.InstaC.Fragments.HomeFragment
-import com.kgstrivers.InstaC.Fragments.NotificationFragment
+import com.kgstrivers.InstaC.Fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     private val homeFragment = HomeFragment()
-    private val dashboardFragment = DashboardFragment()
+    private val searchFragment = SearchFragment()
+    private val reelsFragment  = ReelsFragment()
     private val notificationFragment = NotificationFragment()
+    private val profileFragment = ProfileFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -23,8 +23,10 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId)
             {
                 R.id.fraghome -> replaceFragment(homeFragment)
-                R.id.fragDashboard -> replaceFragment(dashboardFragment)
-                R.id.fragnotification ->replaceFragment(notificationFragment)
+                R.id.fragSearch -> replaceFragment(searchFragment)
+                R.id.fragreels -> replaceFragment(reelsFragment)
+                R.id.fragheart ->replaceFragment(notificationFragment)
+                R.id.fragprofile -> replaceFragment(profileFragment)
             }
             true
         }
