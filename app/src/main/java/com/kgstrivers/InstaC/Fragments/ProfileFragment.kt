@@ -1,11 +1,16 @@
 package com.kgstrivers.InstaC.Fragments
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.kgstrivers.InstaC.EditprofileActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import com.kgstrivers.InstaC.R
+import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +40,18 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
+        val view  =  inflater.inflate(R.layout.fragment_profile, container, false)
+
+        view.editprofilebutton.setOnClickListener {
+
+            startActivity(Intent(context, EditprofileActivity::class.java))
+
+        }
+
+        return view
+
+
+
     }
 
     companion object {
