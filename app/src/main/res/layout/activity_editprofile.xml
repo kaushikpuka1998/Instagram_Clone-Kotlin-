@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,6 +21,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/cancel"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:clickable="true"
@@ -34,11 +35,12 @@
                     android:textColor="@color/white"/>
 
                 <ImageView
-                    android:clickable="true"
+                    android:id="@+id/save"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="345dp"
-                    android:src="@drawable/save_edited_info"/>
+                    android:clickable="true"
+                    android:src="@drawable/save_edited_info" />
             </RelativeLayout>
 
 
@@ -53,4 +55,39 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:src="@color/purple_700"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="260dp"
+        android:text="Name"
+        android:fontFamily="@font/comfortaa_r"
+        android:hint="Name"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/comfortaa_r"
+        android:hint="Username"
+        android:text="Username" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="340dp"
+        android:text="Bio"
+        android:fontFamily="@font/comfortaa_r"
+        android:hint="Bio"/>
+
+</RelativeLayout>
