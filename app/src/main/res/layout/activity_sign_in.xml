@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ui"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/ic_instagram" />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="350dp"
+        android:background="@color/white"
+        android:layout_marginLeft="28dp"
+        android:hint="Email"
+        android:fontFamily="@font/comfortaa_r"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_email"
+        />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="400dp"
+        android:background="@color/white"
+        android:layout_marginLeft="28dp"
+        android:hint="Password"
+        android:fontFamily="@font/comfortaa_r"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_baseline_content_paste_24"
+        />
+
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="460dp"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/lsignupbutton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="650dp"
+        android:backgroundTint="#F44336"
+        android:text="No Aacount? Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

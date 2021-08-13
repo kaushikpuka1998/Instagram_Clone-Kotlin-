@@ -10,14 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InstaC">
         <activity
-            android:name=".EditprofileActivity"
-            android:exported="true" />
-        <activity android:name=".MainActivity">
+            android:name=".SignInActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditprofileActivity"
+            android:exported="true" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
