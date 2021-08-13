@@ -6,70 +6,86 @@
     android:layout_height="match_parent"
     android:background="@drawable/back_ui"
     tools:context=".SignUpActivity">
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="140dp"
-        android:src="@drawable/ic_instagram"/>
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="350dp"
-        android:background="@color/white"
-        android:layout_marginLeft="28dp"
-        android:hint="Email"
-        android:fontFamily="@font/comfortaa_r"
-        android:drawablePadding="15dp"
-        android:drawableLeft="@drawable/ic_email"
-        />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="400dp"
-        android:background="@color/white"
-        android:layout_marginLeft="28dp"
-        android:hint="Password"
-        android:fontFamily="@font/comfortaa_r"
-        android:drawablePadding="15dp"
-        android:drawableLeft="@drawable/ic_baseline_content_paste_24"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
 
-    <EditText
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="450dp"
-        android:background="@color/white"
-        android:layout_marginLeft="28dp"
-        android:hint="Confirm Password"
-        android:fontFamily="@font/comfortaa_r"
-        android:drawablePadding="15dp"
-        android:drawableLeft="@drawable/ic_baseline_content_paste_24"
-        />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="140dp"
+                android:src="@drawable/ic_instagram"/>
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="350dp"
+                android:background="@color/white"
+                android:layout_marginLeft="28dp"
+                android:hint="Email"
+                android:singleLine="true"
+                android:fontFamily="@font/comfortaa_r"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/ic_email"
+                />
 
-    <Button
-        android:id="@+id/ssignupbutton"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="500dp"
-        android:text="Sign Up"
-        android:backgroundTint="@color/purple_700"
-        android:textAllCaps="false"
-        android:textColor="@color/white" />
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="400dp"
+                android:background="@color/white"
+                android:layout_marginLeft="28dp"
+                android:hint="Password"
+                android:singleLine="true"
+                android:password="true"
+                android:fontFamily="@font/comfortaa_r"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/ic_key"
+                />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="450dp"
+                android:background="@color/white"
+                android:layout_marginLeft="28dp"
+                android:singleLine="true"
+                android:hint="Confirm Password"
+                android:fontFamily="@font/comfortaa_r"
+                android:drawablePadding="15dp"
+                android:password="true"
+                android:drawableLeft="@drawable/ic_key"
+                />
+
+            <Button
+                android:id="@+id/ssignupbutton"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="500dp"
+                android:text="Sign Up"
+                android:backgroundTint="@color/purple_700"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
 
-    <Button
-        android:id="@+id/signinbutton"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="650dp"
-        android:layout_marginLeft="28dp"
-        android:textColor="@color/white"
-        android:backgroundTint="#F44336"
-        android:text="Account Have? Sign In"
-        android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/signinbutton"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="650dp"
+                android:layout_marginLeft="28dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#F44336"
+                android:text="Account Have? Sign In"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+    </ScrollView>
 
 
 

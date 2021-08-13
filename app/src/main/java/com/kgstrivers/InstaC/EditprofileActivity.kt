@@ -24,6 +24,14 @@ class EditprofileActivity : AppCompatActivity() {
 
             onBackPressed()
         }
+
+        logoutbutton.setOnClickListener {
+
+            Toast.makeText(this,"Log Out Successfully",Toast.LENGTH_LONG).show()
+            startActivity(Intent(this,SignInActivity::class.java))
+
+        }
+
     }
 
     override fun onBackPressed() {
