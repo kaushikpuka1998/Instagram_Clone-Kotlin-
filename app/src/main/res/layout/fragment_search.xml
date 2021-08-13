@@ -14,12 +14,13 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="70dp"
-                android:background="@color/white"
-                android:layout_marginLeft="150dp"
-                android:src="@drawable/ic_instagram"/>
+
+            <EditText
+                android:layout_width="375dp"
+                android:drawableLeft="@drawable/ic_search_black"
+                android:hint="Search..."
+                android:fontFamily="@font/comfortaa_r"
+                android:layout_height="50dp" />
         </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
