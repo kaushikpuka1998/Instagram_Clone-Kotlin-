@@ -9,7 +9,7 @@
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:scrollbars="vertical">
+        android:scrollbars="none">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -18,23 +18,51 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="150dp"
                 android:layout_marginLeft="140dp"
                 android:src="@drawable/ic_instagram"/>
-            <EditText
-                android:layout_width="350dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="350dp"
-                android:background="@color/white"
-                android:layout_marginLeft="28dp"
-                android:hint="Email"
-                android:singleLine="true"
-                android:fontFamily="@font/comfortaa_r"
-                android:drawablePadding="15dp"
-                android:drawableLeft="@drawable/ic_email"
-                />
 
             <EditText
+                android:id="@+id/signupname"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="250dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/comfortaa_r"
+                android:hint="Name"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/signupuserid"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="300dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_userid"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/comfortaa_r"
+                android:hint="User ID"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/signupemail"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="350dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/comfortaa_r"
+                android:hint="Email"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/signuppass"
                 android:layout_width="350dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="400dp"
@@ -49,6 +77,7 @@
                 />
 
             <EditText
+                android:id="@+id/signupconfirmpass"
                 android:layout_width="350dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="450dp"
