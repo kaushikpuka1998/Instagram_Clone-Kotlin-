@@ -14,17 +14,28 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-        lsignupbutton.setOnClickListener {
 
-            startActivity(Intent(this,SignUpActivity::class.java))
+        val currentUserID =  FirebaseAuth.getInstance().currentUser
+
+        if(currentUserID!=null)
+        {
+            startActivity(Intent(this,MainActivity::class.java))
+        }else
+        {
+            lsignupbutton.setOnClickListener {
+
+                startActivity(Intent(this,SignUpActivity::class.java))
+            }
+
+            loginbutton.setOnClickListener{
+
+
+                signin()
+
+            }
         }
 
-        loginbutton.setOnClickListener{
 
-
-            signin()
-
-        }
     }
 
     private fun signin() {

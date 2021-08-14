@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import com.kgstrivers.InstaC.Fragments.ProfileFragment
 import kotlinx.android.synthetic.main.activity_editprofile.*
 
@@ -26,7 +27,8 @@ class EditprofileActivity : AppCompatActivity() {
         }
 
         logoutbutton.setOnClickListener {
-
+            val mAuth : FirebaseAuth = FirebaseAuth.getInstance()
+            mAuth.signOut()
             Toast.makeText(this,"Log Out Successfully",Toast.LENGTH_LONG).show()
             startActivity(Intent(this,SignInActivity::class.java))
 
